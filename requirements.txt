@@ -1,0 +1,4 @@
+# Reference environment; Python 3.10/3.11 recommended.
+numpy==1.26.4
+scipy==1.13.1
+opencv-python==4.10.0.84

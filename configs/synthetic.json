@@ -1,0 +1,68 @@
+{
+  "project_root": "..",
+  "seed": 42,
+  "intrinsics": {
+    "folders": [
+      "data/synthetic/intrinsics/cam1",
+      "data/synthetic/intrinsics/cam2"
+    ],
+    "board_inner_corners": [
+      9,
+      6
+    ],
+    "square_size_m": 0.035,
+    "fov_deg": [
+      210.0,
+      210.0
+    ],
+    "seed_params": [
+      [
+        235.0,
+        237.0,
+        319.5,
+        319.5,
+        0.5,
+        0.55
+      ],
+      [
+        235.0,
+        237.0,
+        319.5,
+        319.5,
+        0.5,
+        0.55
+      ]
+    ],
+    "max_frames": 80,
+    "max_nfev": 1000,
+    "loss_px": 1.0,
+    "max_rms_px": 2.0
+  },
+  "extrinsics": {
+    "folders": [
+      "data/synthetic/extrinsics/cam1",
+      "data/synthetic/extrinsics/cam2"
+    ],
+    "initial_rotation_xyz_deg": [
+      0.0,
+      180.0,
+      0.0
+    ],
+    "overlap_margin_deg": 10.0,
+    "max_frames": 30,
+    "max_features": 5000,
+    "ratio": 0.75,
+    "per_bin_cap": 30,
+    "ransac_iterations": 3000,
+    "threshold_deg": 0.3,
+    "min_parallax_deg": 0.05,
+    "baseline_m": 0.12
+  },
+  "stitching": {
+    "folders": [
+      "data/synthetic/stitch/cam1",
+      "data/synthetic/stitch/cam2"
+    ],
+    "width": 1024
+  }
+}

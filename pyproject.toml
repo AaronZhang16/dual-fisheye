@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dual-fisheye"
+version = "0.1.0"
+description = "Offline Double Sphere dual-fisheye calibration and distant-scene stitching"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<2", "scipy>=1.13,<1.14", "opencv-python>=4.5.5,<4.12"]
+
+[project.scripts]
+dual-fisheye = "dual_fisheye.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["dual_fisheye*"]
+namespaces = false
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
